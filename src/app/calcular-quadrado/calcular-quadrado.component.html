@@ -1,0 +1,15 @@
+<div class="quadrado-container">
+  <h2>Calcular Área ao Quadrado</h2>
+  <label>
+    Largura:
+    <input type="number" [(ngModel)]="largura">
+  </label>
+  <label>
+    Altura:
+    <input type="number" [(ngModel)]="altura">
+  </label>
+  <button (click)="calcular()">Calcular</button>
+  <div *ngIf="resultado !== null" class="resultado">
+    Resultado: {{ resultado }}
+  </div>
+</div>
